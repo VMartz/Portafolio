@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Viridiana Domínguez Martínez</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="estilos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/imagenes-desarrolladores/desarrollador-ejemplo.svg" alt="Foto de Jane Doe">
+        <h1>Hola, soy Viridiana Domínguez Martínez.</h1>
+           <!--Animación con JavaScript-->
+           <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/control.png" alt="">
+      </div>
+    </section>
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Viridiana Domínguez.</h2>
+      </div>
+    </section>
+     <!-- Experiencia -->
+     <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- positivas -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">POSITIVAS</p>
+            <p>
+              Eres muy enérgica con las cosas que te gustan como los video juegos. 
+              Eres muy ordenada, por que si ves algo en desorden te da hasta ansiedad. 
+              Eres muy tolerante con las personas ya sea que te caigan bien o mal.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-danger">AMABLE</span>
+              <span class="badge text-bg-danger">TIMIDA</span>
+              <span class="badge text-bg-danger">SIMPATICA</span>
+            </div>
+          </div>
+          <!-- negativas -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">NEGATIVAS</p>
+            <p>Te sobre exiges aveces mucho.
+              Eres muy testaruda en ocasiones.
+              También eres muy exigente contigo misma. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-danger">DORMILONA</span>
+              <span class="badge text-bg-danger">FLOJA</span>
+              <span class="badge text-bg-danger">DESINTERESADA</span>
+            </div>
+          </div>
+          <!--MIA -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">MI OPINION</p>
+            <p>No se como describirme pero deje de tomarle importancia a las cosas
+              Disfruto mucho los videojuegos, el anime, la musica, dormir y leer mangas.
+              Soy muy hogareña que prefiero quedarme en casa acostada o dibujar(Tiene bastante que no dibujo)
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-danger">NO TENGO METAS</span>
+              <span class="badge text-bg-danger">NO ESPERO MUCHO DE LA GENTE</span>
+              <span class="badge text-bg-danger">ANIMO!!! :,V</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son mis videojuegos favoritos y que recomiendo </h3>
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.jpe" alt="Foto de Nier">
+              <p class="testimonio-texto">Después de 120Hr de juego Y haber terminado los 27 finales (A-Z) Puedo decir que es un juegazo, tanto en gameplay como en historia ambos factores se conectan de una forma muy exquisita.
+                Es hermoso los temas que trata y de la forma que te los plantea, siendo este factor muy bien conjeturado A lo largo de la historia,
+              </p>
+              <div  class =" testimonio-info " >
+                <p  class =" cargo " >Nier:Automata</p >
+              </div> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.jfif" alt="Foto de Scarlet">
+              <p class="testimonio-texto">Uno de estos nuevos conceptos es un RPG de acción desarrollado en un futuro distópico donde héroes con poderes psíquicos tendrán que defender a la humanidad de extraterrestres come cerebros.</p>
+              <div  class =" testimonio-info " >
+                <p  class =" cargo " >Scarlet Nexus</p >
+              </div> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.jfif" alt="Foto de Code">
+              <p class="testimonio-texto">Es buen juego. Su estilo anime, mecánica y ambientalizacion están muy bien elaborados por parte del desarrollo. Creo que ha sido uno muy diferenciado a otros games que he jugado que tenga que relacionarse con el anime.Soy amante al soulslike</p>
+              <div  class =" testimonio-info " >
+                <p  class =" cargo " >Code Vein</p >
+              </div> 
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+  
+   <!-- Pie de pagina (footer) -->
+   <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+    <p class="footer-texto text-center">Quiero dormir<br>o jugar</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://mobile.twitter.com/_VMartz" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://github.com/VMartz" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/viridiana-dominguez-martinez-9bb5b525a/" target="_blank"  title="linkedin" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/_vmartz/?hl=es-la" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+        </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Viridiana Domínguez (2023) &#169;</div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

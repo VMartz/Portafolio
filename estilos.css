@@ -1,0 +1,264 @@
+/* Barra de navegacion */
+.navbar {
+    padding: 2rem;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between; 
+}
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #ADF5EA;
+  }
+  .seccion-oscura {
+    color: #000000;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  .seccion-clara {
+    color: black;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  .seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+  }
+  .seccion-texto {
+    font-size: 1.2rem;
+  }
+  .btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+  .texto-negro {
+    color: black;
+  }
+  .texto-blanco {
+    color: white;
+  }
+
+  /* Seccion Hero */
+.hero {
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  }
+
+  /*imagen del usuario*/
+  .hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+  
+  /* Sobre mi */
+  .sobre-mi {
+    height: 100px;
+    padding: 10px;
+  }
+  .sobre-mi .contenedor {
+    max-width: 400px;
+    text-align: center;
+  }
+
+/* Experiencia */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+  }
+  .experiencia .columna {
+    padding: 20px;
+    border: 2px solid #f3ebeb4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+  }
+  .experiencia .columna:hover {
+    background: #aa4b6b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  .experiencia i {
+    font-size: 2.5rem;
+    color: #000000;
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 8px 19px;
+    border-radius: 50%;
+  }
+  .experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .badge {
+    margin: 5px;
+  }
+   /* testimonios */
+  .carousel-item .container {
+    color: aliceblue;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+  }
+  .testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  .testimonio-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  .testimonio-info p {
+    margin-bottom: 0;
+  }
+  .testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #b8aeae;
+  }
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .contacto button {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  .contacto button:hover {
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .contacto button:hover i {
+    color: #B3FA99;
+  }
+
+
+/* Pie de pagina (footer) */
+footer {
+    min-height: 450px;
+  }
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  .iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  .iconos-redes-sociales a:hover i {
+    color: black;
+  }
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #000000;
+    padding: 20px;
+  }
+
+  /* Adaptable (Responsivo) */
+  @media screen and (max-width: 400px) {
+    .overlay p {
+      font-size: 18px;
+    }
+    .overlay i {
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .testimonio-imagen {
+      height: 120px;
+      width: 120px;
+    }
+    .testimonio-texto {
+      font-size: 18px;
+    }
+  }
+  /*imagen*/
+  @media screen and (min-width: 70px) {
+    .hero-inferior-imagen {
+      max-width: 450px;
+    }
+  }
